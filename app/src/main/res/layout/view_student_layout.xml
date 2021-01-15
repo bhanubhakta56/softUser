@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        app:cardBackgroundColor="#DCD8ED">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/noimage" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_weight="1"
+                        android:text="kiran"
+                        android:gravity="center|start"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="57dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/img_delete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_delete_24" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_weight="1"
+                    android:text="30"
+                    android:gravity="start|center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="lalitpur"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        android:layout_weight="3"
+                        android:text="Male"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
